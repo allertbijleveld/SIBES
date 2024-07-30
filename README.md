@@ -73,7 +73,8 @@ to browse the species based on part of a species name or id.
 # Species selection
 
 ``` r
-## data can be selected with the search function, which could be convenient for selecting multiple species
+## data can be selected with the search function, which 
+## could be convenient for selecting multiple species
     # data_list[['biota']] <- sibes_species_search(
     #                           data_list[['biota']], 
     #                           Key='39') # also includes sibes_id 339

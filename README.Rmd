@@ -65,7 +65,8 @@ To conveniently search for  species, *sibes_species_search* allows either to bro
 # Species selection
 
 ```{r species select, message=FALSE, warning=FALSE,include = TRUE}
-## data can be selected with the search function, which could be convenient for selecting multiple species
+## data can be selected with the search function, which 
+## could be convenient for selecting multiple species
 	# data_list[['biota']] <- sibes_species_search(
 	#							data_list[['biota']], 
 	#							Key='39') # also includes sibes_id 339
