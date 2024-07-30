@@ -18,12 +18,7 @@ knitr::opts_chunk$set(
 
 # SIBES
 
-SIBES stands for Synoptic Intertidal BEnthic Survey. The goal of the *SIBES*-package is to conveniently load, process, and explore SIBES-data on abundance, biomass, median grain size and mud content. The basic workflow is covered in this readme document and illustrated with this ![flowchart](https://github.com/allertbijleveld/SIBES/tree/main/man/figures/flow_chart_SIBES.png):
-
-```{r plot flowchart, message=FALSE, warning=FALSE, include=FALSE}
-# flowchart<-png::readPNG("\\man\\figures\\flow_chart_SIBES.png")
-# flowchart<-png::readPNG("C:\\Users\\allert\\Documents\\GitHub\\SIBES\\man\\figures\\flow_chart_SIBES.png")
-```
+SIBES stands for Synoptic Intertidal BEnthic Survey. The goal of the *SIBES*-package is to conveniently load, process, and explore SIBES-data on abundance, biomass, median grain size and mud content. The basic workflow is covered in this readme document and illustrated with this ![flowchart](/man/figures/flow_chart_SIBES.png):
 
 # Installation
 

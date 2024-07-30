@@ -11,7 +11,7 @@ SIBES stands for Synoptic Intertidal BEnthic Survey. The goal of the
 *SIBES*-package is to conveniently load, process, and explore SIBES-data
 on abundance, biomass, median grain size and mud content. The basic
 workflow is covered in this readme document and illustrated with this
-![flowchart](https://github.com/allertbijleveld/SIBES/tree/main/man/figures/flow_chart_SIBES.png):
+![flowchart](/man/figures/flow_chart_SIBES.png):
 
 # Installation
 
