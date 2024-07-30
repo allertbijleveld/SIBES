@@ -1,0 +1,42 @@
+Package: SIBES
+Title: Package for working with SIBES
+Version: 0.9
+Authors@R: 
+    c(
+	person(given = "Allert", family = "Bijleveld", role = c("aut", "cre"), email = "allert.bijleveld@nioz.nl", comment = c(ORCID = "0000-0002-3159-8944")), 
+	person(given = "Amin", family = "Niamir", role = c("aut"), email = "leon.serrefredj@gmail.com", comment = c(ORCID = "0000-0002-1037-1978")), 
+	person(given = "Léon", family = "Serre Fredj", role = c("aut"), email = "leon.serrefredj@gmail.com", comment = c(ORCID = "0000-0002-1037-1978"))
+	)
+Description: Tools for loading, processing, and exploring SIBES-data.
+URL: https://github.com/allertbijleveld/SIBES
+BugReports: https://github.com/allertbijleveld/SIBES/issues
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 2.10),
+    tidyverse
+Imports: 
+    assertthat,
+    data.table,
+    dplyr,
+    fields,
+    ggmap,
+    ggplot2,
+    lubridate,
+    plotly,
+    prettymapr,
+    raster,
+    RColorBrewer,
+    reprex,
+    rgdal,
+    sf,
+    sp,
+    spatstat.geom,
+    spData,
+    stringr,
+    terra,
+    viridis
+LazyData: true
+
