@@ -88,7 +88,9 @@ to browse the species based on part of a species name or id.
 # Aggregating data per sampling station
 
 If more than one species is present within biota, it needs to be
-aggregated per sampling station.
+aggregated per sampling station. In this example, it is not necessary
+because we only selected one species in the previous step (*sibes_id ==
+45*).
 
 ``` r
 ## aggregate the species data into biota
@@ -210,7 +212,9 @@ year.
 
 ## Plot map
 
-The function *sibes_plot_map* can be used for easy mapping.
+The function *sibes_plot_map* can be used for easy mapping. in tha
+plots, light grey areas show intertidal mudflats and dark grey areas
+show land.
 
 ``` r
 ## Map distribution across whole SIBES-extent

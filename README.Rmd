@@ -79,7 +79,7 @@ To conveniently search for  species, *sibes_species_search* allows either to bro
 
 # Aggregating data per sampling station
 
-If more than one species is present within biota, it needs to be aggregated per sampling station.
+If more than one species is present within biota, it needs to be aggregated per sampling station. In this example, it is not necessary because we only selected one species in the previous step (*sibes_id == 45*). 
 
 ```{r If multiple species aggregate, message=FALSE, warning=FALSE, include = TRUE}
 ## aggregate the species data into biota
@@ -174,7 +174,7 @@ Subset the merged dataset for a particular area, time period, and/or year.
 
 ## Plot map 
 
-The function *sibes_plot_map* can be used for easy mapping. 
+The function *sibes_plot_map* can be used for easy mapping. in tha plots, light grey areas show intertidal mudflats and dark grey areas show land.
 
 ```{r Map plot, message=FALSE, warning=FALSE}
 ## Map distribution across whole SIBES-extent
