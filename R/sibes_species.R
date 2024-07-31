@@ -13,7 +13,7 @@
 #' sibes_species_search(data_list[["species"]], Key='57|34|67')
 
 sibes_species_search <- function(Inputdata=NULL, Key=NULL){
-  if(!is.null(Key)||!is.null(Inputdata))  x <- Inputdata %>% mutate(combined=str_c(Inputdata$name,Inputdata$sibes_id,Inputdata$short_name)) %>% filter(str_detect(combined,regex(Key, ignore_case = TRUE))) %>% subset(select = -combined )
+  if(!is.null(Key)||!is.null(Inputdata))  x <- Inputdata %>% mutate(combined=str_c(Inputdata$name,Inputdata$sibes_id,Inputdata$short_name)) %>% filter(stringr::str_detect(combined,regex(Key, ignore_case = TRUE))) %>% subset(select = -combined )
   else x <- "error"
  return(x)
 }
