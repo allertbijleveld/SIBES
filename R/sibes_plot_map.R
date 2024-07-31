@@ -36,12 +36,12 @@ sibes_plot_map <- function(Inputdata, attribute, ticks=5, InputdataProj = 4326, 
 		Cont_Color_bar<- recordPlot()
 
     ## make data spatial 
-		temp_data <- data.frame(temp_data,sf::st_coordinates(sf::st_transform(sf::st_set_crs(sf::st_as_sf(data.frame(temp_data$x, temp_data$y),coords=c(1:2)),InputdataProj),crs = MapProj)))
+		temp_data <- data.frame(temp_data,sf::st_coordinates(sf::st_transform(sf::st_set_crs(sf::st_as_sf(data.frame(temp_data$x, temp_data$y), coords=c(1:2)),InputdataProj),crs = MapProj)))
 
     #Load the Wadden Sea shapefile:
 		land <- get("Wadden_sea_map")
 		land <- sf::st_transform(x=land,crs=MapProj)
-		mudflats <- sf::st_as_sf(get("mudflats"))
+		mudflats <-get("mudflats")
 		mudflats <- sf::st_transform(x=mudflats,crs=MapProj)
 
 	## make the plot 
