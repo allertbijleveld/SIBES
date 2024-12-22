@@ -173,8 +173,8 @@ flowchart
 <span>                            filters <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
 <span>                                    <span class="st">"between(</span></span>
 <span><span class="st">                                        date,</span></span>
-<span><span class="st">                                        as.Date(\"2010-01-01\",format=\"%Y-%m-%d\"),</span></span>
-<span><span class="st">                                        as.Date(\"2020-08-11\",format=\"%Y-%m-%d\")</span></span>
+<span><span class="st">                                        as.Date(\"2008-01-01\",format=\"%Y-%m-%d\"),</span></span>
+<span><span class="st">                                        as.Date(\"2021-10-26\",format=\"%Y-%m-%d\")</span></span>
 <span><span class="st">                                            )"</span> </span>
 <span>                                        <span class="op">)</span> </span>
 <span>                                    <span class="op">)</span></span>
@@ -199,8 +199,8 @@ flowchart
 <code class="sourceCode R"><span><span class="co">## get the number of samples per year in the selected data</span></span>
 <span>    <span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/data.table/man/IDateTime.html" class="external-link">year</a></span><span class="op">(</span><span class="va">data_selected_2</span><span class="op">$</span><span class="va">date</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 </span></span>
-<span><span class="co">#&gt; 3966 3846 3849 3839 4176 4137 4168 2831 2274 4203 2366</span></span>
+<span><span class="co">#&gt; 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 </span></span>
+<span><span class="co">#&gt; 3792 3989 3966 3846 3849 3839 4176 4137 4168 2831 2274 4203 2366 4415</span></span>
 <span></span>
 <span><span class="co">## get the number of times a station occurs in the selected data</span></span>
 <span>    <span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/data.table/man/IDateTime.html" class="external-link">year</a></span><span class="op">(</span><span class="va">data_selected_3</span><span class="op">$</span><span class="va">date</span><span class="op">)</span>,<span class="va">data_selected_3</span><span class="op">$</span><span class="va">sampling_station_id</span><span class="op">)</span></span>

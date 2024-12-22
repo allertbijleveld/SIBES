@@ -79,50 +79,60 @@ This function use keywords to search the species tibble. This is convenient if o
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">sibes_species_search</span><span class="op">(</span><span class="va">data_list</span><span class="op">[[</span><span class="st">"species"</span><span class="op">]</span><span class="op">]</span>, Key<span class="op">=</span><span class="st">'57|34|67'</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    sibes_id                   name short_name aphia_id taxonomic_group</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        34  Lepidonotus squamatus     Lepsqu   130801      polychaete</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        57              Abra alba     Abralb   141433         bivalve</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3        67        Magallana gigas     Maggig   836033         bivalve</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       134     Diogenes pugilator     Diopug   107199       crustacea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       234    Hypereteone foliosa     Hypfol   152250      polychaete</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       267             Paguroidea     Paguro   106687       crustacea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       341          Proceraea sp.     Prospe   129671      polychaete</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       342          Phyllodocidae     Phyllo      931      polychaete</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       343  Boccardia proboscidea     Bocpro   327249      polychaete</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10      344           Necora puber     Necpub   107398       crustacea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 11      346      Palaemon serratus    Palaser   107616       crustacea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 12      347        Caprella mutica     Capmut   146768       crustacea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 13      348 Palaemon macrodactylus     Palmac   181372       crustacea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 14      367     Hippolyte varians      Hopvar   107518       crustacea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    year_added weight_is_measured length_is_measured length_measuring_method_id</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        1999               True              False                         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        1999               True               True                          6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3        1999               True               True                          6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4        1999               True              False                         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5        2015               True              False                         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6        2018               True               True                         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7        2020               True              False                         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8        2021               True              False                         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9        2021               True              False                         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10       2021               True               True                          3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 11       2021               True               True                          2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 12       2021               True              False                         NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 13       2021               True               True                          2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 14       2022               True              False                          2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    min_shell_length_to_separate_flesh missing_afdm_method_id remarks</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                  NA                     NA        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                   8                     12        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                                   8                     12        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                                  NA                     NA        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                                  NA                     12        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                                  NA                     NA        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7                                  NA                     NA        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8                                  NA                     NA        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9                                  NA                     NA        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10                                 NA                     NA        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 11                                 NA                     NA        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 12                                 NA                     NA        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 13                                 NA                     NA        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 14                                 NA                     NA        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       &lt;int&gt;                 &lt;char&gt;     &lt;char&gt;    &lt;int&gt;          &lt;char&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1:       57              Abra alba     Abralb   141433         bivalve</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2:       67        Magallana gigas     Maggig   836033         bivalve</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3:      267             Paguroidea     Paguro   106687       crustacea</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4:      348 Palaemon macrodactylus     Palmac   181372       crustacea</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5:      343  Boccardia proboscidea     Bocpro   327249      polychaete</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6:      234    Hypereteone foliosa     Hypfol   152250      polychaete</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7:       34  Lepidonotus squamatus     Lepsqu   130801      polychaete</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8:      342          Phyllodocidae     Phyllo      931      polychaete</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9:      341          Proceraea sp.     Prospe   129671      polychaete</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    taxonomic_indentification_level year_added occurance occupancy</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                             &lt;char&gt;      &lt;int&gt;     &lt;int&gt;     &lt;num&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1:                         species       2000       397       0.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2:                         species       2000       174       0.3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3:                     superfamily       2018         1       0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4:                         species       2021         1       0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5:                         species       2021         1       0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6:                         species       2015       205       0.4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7:                         species       2000         4       0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8:                          family       2021        17       0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9:                           genus       2020         8       0.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    weight_is_measured length_measuring_method_id.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                &lt;lgcl&gt;                       &lt;int&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1:               TRUE                           6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2:               TRUE                           6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3:               TRUE                          NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4:               TRUE                           2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5:               TRUE                          NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6:               TRUE                          NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7:               TRUE                          NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8:               TRUE                          NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9:               TRUE                          NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    min_shell_length_to_separate_flesh missing_afdm_method_id..</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                 &lt;int&gt;                    &lt;int&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1:                                  8                       12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2:                                  8                       12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3:                                 NA                       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4:                                 NA                       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5:                                 NA                       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6:                                 NA                       12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7:                                 NA                       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8:                                 NA                       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9:                                 NA                       NA</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                                                       remarks</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                                                        &lt;char&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1:                                                                           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2:                                                                           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3: Juvenile or broken individuals. So far, only Pagurus bernardus was found. </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4:                                                                           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5:                                                                           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6:                                                                           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7:                                                                           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8:                  Phyllodocidae below 10 mm are classified on family level.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9:                                           Juvenile or damaged individuals.</span>
 </code></pre></div>
     </div>
   </div>

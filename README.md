@@ -144,8 +144,8 @@ year.
                             filters = c(
                                     "between(
                                         date,
-                                        as.Date(\"2010-01-01\",format=\"%Y-%m-%d\"),
-                                        as.Date(\"2020-08-11\",format=\"%Y-%m-%d\")
+                                        as.Date(\"2008-01-01\",format=\"%Y-%m-%d\"),
+                                        as.Date(\"2021-10-26\",format=\"%Y-%m-%d\")
                                             )" 
                                         ) 
                                     )
@@ -170,8 +170,8 @@ year.
 ## get the number of samples per year in the selected data
     table(year(data_selected_2$date))
 #> 
-#> 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 
-#> 3966 3846 3849 3839 4176 4137 4168 2831 2274 4203 2366
+#> 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 
+#> 3792 3989 3966 3846 3849 3839 4176 4137 4168 2831 2274 4203 2366 4415
 
 ## get the number of times a station occurs in the selected data
     table(year(data_selected_3$date),data_selected_3$sampling_station_id)
