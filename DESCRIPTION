@@ -1,6 +1,6 @@
 Package: SIBES
 Title: Package for working with SIBES
-Version: 0.9
+Version: 1.0
 Authors@R: 
     c(
 	person(given = "Allert", family = "Bijleveld", role = c("aut", "cre"), email = "allert.bijleveld@nioz.nl", comment = c(ORCID = "0000-0002-3159-8944")), 
