@@ -31,7 +31,8 @@ sibes_load <- function(directory_path,
   if(!is.null(samples_csv_name))
   {
     tsamples <- data.table::fread( paste(directory_path,samples_csv_name,sep='/') ,stringsAsFactors=FALSE)
-    data_list <- append(data_list,list(tsamples))
+    tsamples$date <- as.Date(tsamples$date, format="%Y-%m-%d")
+	data_list <- append(data_list,list(tsamples))
     names(data_list)[length(data_list)] = "samples"
   }
   return(data_list)
