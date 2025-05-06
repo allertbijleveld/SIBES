@@ -84,12 +84,13 @@ If more than one species is present within biota, it needs to be aggregated per 
 
 ```{r If multiple species aggregate, message=FALSE, warning=FALSE, include = TRUE}
 ## aggregate the species data into biota
-	data_list[['biota']] <- data_list[['biota']] %>%
-							group_by(sample_id)  %>%
-							summarize(
-								abundance_m2 =  sum(abundance_m2), 
-								afdm_m2 =  sum(afdm_m2)
-								)
+	data_list[['biota']]  <-  data_list[['biota']] %>%
+							replace(is.na(.), 0) %>%
+                            group_by(sample_id)  %>%
+                            summarize(
+                                abundance_m2 =  sum(abundance_m2),
+                                afdm_m2 =  sum(afdm_m2)
+                                )
 ```
 
 # Merge 'biota' and 'samples' 
