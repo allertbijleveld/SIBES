@@ -50,6 +50,7 @@ csv-files have been modified, these can be provided with arguments.
 
 ``` r
 library(SIBES)
+#> Warning: package 'data.table' was built under R version 4.4.3
 
 ## load the three SIBES-csv files from a folder
     # data_list <- sibes_load(directory_path = '')
@@ -95,11 +96,12 @@ because we only selected one species in the previous step (*sibes_id ==
 
 ``` r
 ## aggregate the species data into biota
-    data_list[['biota']] <- data_list[['biota']] %>%
-                            group_by(sample_id)  %>%
-                            summarize(
-                                abundance_m2 =  sum(abundance_m2), 
-                                afdm_m2 =  sum(afdm_m2)
+    data_list[['biota']]  <-  data_list[['biota']] %>%
+                                replace(is.na(.), 0) %>%
+                                group_by(sample_id)  %>%
+                                summarize(
+                                    abundance_m2 =  sum(abundance_m2),
+                                    afdm_m2 =  sum(afdm_m2)
                                 )
 ```
 
